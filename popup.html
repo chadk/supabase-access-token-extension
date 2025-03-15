@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supabase Access Token Extractor</title>
+  <style>
+    body {
+      width: 350px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    #result {
+      margin-top: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      word-break: break-all;
+      background-color: #f9f9f9;
+      min-height: 24px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    .hidden {
+      display: none;
+    }
+    .success {
+      color: green;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h2>Supabase Access Token Extractor</h2>
+  <button id="extractToken">Extract Access Token</button>
+  <div>
+    <p>Access Token:</p>
+    <div id="result">No token extracted yet</div>
+    <button id="copyButton" class="hidden">Copy to Clipboard</button>
+    <div id="copySuccess" class="success hidden">Copied to clipboard!</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
